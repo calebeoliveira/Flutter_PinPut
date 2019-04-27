@@ -86,6 +86,7 @@ class PinPutState extends State<PinPut> {
           decoration: widget.inputDecoration,
           textAlign: TextAlign.center,
           maxLength: 1,
+          autofocus: i == 0 && widget.autoFocus,
           controller: _bloc.textCtrls[i],
           focusNode: _bloc.nodes[i],
           onChanged: (String s) {
